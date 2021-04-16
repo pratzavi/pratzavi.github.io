@@ -12,7 +12,12 @@
       display: inline-block;
       border: 1px solid blue;
     }
-    input[type='radio']:checked:before {
+    input[type='checkbox']:before {
+      border-radius: 3px;
+      top:-2px;
+      left:-2px;
+    }
+    input[type='radio']:checked:after {
       width: 12px;
       height: 12px;
       border-radius: 15px;
@@ -23,6 +28,17 @@
       content: '';
       display: inline-block;
       border: 1px solid blue;
+    }
+    input[type='checkbox']:checked:after {
+      width: 20px;
+      height: 20px;
+      border-radius: 3px;
+      top:-22px;
+      left:-2px;
+      content: '';
+      display: inline-block;
+      border: 1px solid blue;
+      background-color: blue;
     }
   </style>
 <body>
